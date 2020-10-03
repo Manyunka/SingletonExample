@@ -10,13 +10,13 @@ namespace SingletonExample
     {
         private Singleton()
         {
-            Console.WriteLine($"Constructor");
+            Console.WriteLine("Constructor");
         }
         public static Singleton Instance
         {
             get
             {
-                Console.WriteLine($"Instance");
+                Console.WriteLine("Instance");
                 return Nested.instance;
             }
         }
